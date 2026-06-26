@@ -1,0 +1,8 @@
+# Install paddlepaddle or paddlepaddle-gpu separately first, based on the target machine.
+paddleocr>=3.5.0,<4.0.0
+paddlex[ocr]==3.7.1
+pillow>=10.0.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+pytest>=8.0.0
+numpy>=1.26.0

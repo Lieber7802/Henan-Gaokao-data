@@ -1,0 +1,28 @@
+{
+  "source_pdf": "D:\\gaokao_data\\tmp_input_2025_science_stats.pdf",
+  "pages": [
+    {"pdf_page": 5, "chapter": "chapter1", "section": "score_lines", "table_type": "chapter1_score_lines"},
+    {"pdf_page": 6, "chapter": "chapter1", "section": "score_bands", "table_type": "chapter1_score_bands"},
+    {"pdf_page": 10, "chapter": "chapter1", "section": "score_bands", "table_type": "chapter1_score_bands"},
+    {"pdf_page": 18, "chapter": "chapter1", "section": "score_bands", "table_type": "chapter1_score_bands"},
+    {"pdf_page": 20, "chapter": "chapter2", "section": "batch1_application", "table_type": "chapter2_batch1_application"},
+    {"pdf_page": 21, "chapter": "chapter2", "section": "batch1_application", "table_type": "chapter2_batch1_application"},
+    {"pdf_page": 22, "chapter": "chapter2", "section": "batch1_application", "table_type": "chapter2_batch1_application"},
+    {"pdf_page": 43, "chapter": "chapter2", "section": "batch1_application", "table_type": "chapter2_batch1_application"},
+    {"pdf_page": 44, "chapter": "chapter2", "section": "batch2_application", "table_type": "chapter2_batch2_application"},
+    {"pdf_page": 45, "chapter": "chapter2", "section": "batch2_application", "table_type": "chapter2_batch2_application"},
+    {"pdf_page": 82, "chapter": "chapter2", "section": "vocational_application", "table_type": "chapter2_vocational_application"},
+    {"pdf_page": 83, "chapter": "chapter2", "section": "vocational_application", "table_type": "chapter2_vocational_application"},
+    {"pdf_page": 122, "chapter": "chapter2", "section": "vocational_application", "table_type": "chapter2_vocational_application"},
+    {"pdf_page": 123, "chapter": "chapter3", "section": "batch1_major_admission", "table_type": "chapter3_batch1_major_admission"},
+    {"pdf_page": 124, "chapter": "chapter3", "section": "batch1_major_admission", "table_type": "chapter3_batch1_major_admission"},
+    {"pdf_page": 125, "chapter": "chapter3", "section": "batch1_major_admission", "table_type": "chapter3_batch1_major_admission"},
+    {"pdf_page": 456, "chapter": "chapter3", "section": "batch1_major_admission", "table_type": "chapter3_batch1_major_admission"},
+    {"pdf_page": 457, "chapter": "chapter3", "section": "batch2_major_admission", "table_type": "chapter3_batch2_major_admission"},
+    {"pdf_page": 458, "chapter": "chapter3", "section": "batch2_major_admission", "table_type": "chapter3_batch2_major_admission"},
+    {"pdf_page": 869, "chapter": "chapter3", "section": "batch2_major_admission", "table_type": "chapter3_batch2_major_admission"},
+    {"pdf_page": 870, "chapter": "chapter3", "section": "vocational_admission", "table_type": "chapter3_vocational_admission"},
+    {"pdf_page": 871, "chapter": "chapter3", "section": "vocational_admission", "table_type": "chapter3_vocational_admission"},
+    {"pdf_page": 912, "chapter": "chapter3", "section": "vocational_admission", "table_type": "chapter3_vocational_admission"}
+  ]
+}

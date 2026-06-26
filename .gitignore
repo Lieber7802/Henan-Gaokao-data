@@ -1,0 +1,26 @@
+# Local virtual environments
+.venv/
+.venv-paddleocr/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated OCR outputs and temporary renderings
+output/
+tmp/
+*.inspect.ndjson
+
+# Source PDFs are transferred separately and should not enter Git.
+*.pdf
+
+# Local duplicate input used during experiments
+tmp_input_2025_science_stats.pdf
+
+# Node dependencies used by earlier local workbook experiments
+workbook_build/node_modules/
+
+# Local secrets/config
+.env
+.env.*

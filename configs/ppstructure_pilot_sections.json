@@ -1,0 +1,63 @@
+{
+  "source_pdf": "tmp_input_2025_science_stats.pdf",
+  "rendered_pages_dir": "output/pilot/rendered_pages",
+  "output_dir": "output/ppstructure_pilot",
+  "sections": [
+    {
+      "section_id": "chapter1_score_lines",
+      "section_name_cn": "第一章录取控制线",
+      "pdf_pages": [5],
+      "expected_final_sheet": "01_录取控制分数线",
+      "table_family": "score_lines"
+    },
+    {
+      "section_id": "chapter1_score_bands",
+      "section_name_cn": "第一章分数段统计",
+      "pdf_pages": [6, 10, 18],
+      "expected_final_sheet": "02_分数段统计",
+      "table_family": "score_bands"
+    },
+    {
+      "section_id": "chapter2_batch1_application",
+      "section_name_cn": "第二章本科一批投档",
+      "pdf_pages": [20, 21, 22, 43],
+      "expected_final_sheet": "03_本科一批投档",
+      "table_family": "application"
+    },
+    {
+      "section_id": "chapter2_batch2_application",
+      "section_name_cn": "第二章本科二批投档",
+      "pdf_pages": [44, 45],
+      "expected_final_sheet": "04_本科二批投档",
+      "table_family": "application"
+    },
+    {
+      "section_id": "chapter2_vocational_application",
+      "section_name_cn": "第二章高职高专投档",
+      "pdf_pages": [82, 83, 122],
+      "expected_final_sheet": "05_高职高专投档",
+      "table_family": "application"
+    },
+    {
+      "section_id": "chapter3_batch1_major_admission",
+      "section_name_cn": "第三章本科一批分专业录取",
+      "pdf_pages": [123, 124, 125, 456],
+      "expected_final_sheet": "06_本科一批分专业录取",
+      "table_family": "major_admission"
+    },
+    {
+      "section_id": "chapter3_batch2_major_admission",
+      "section_name_cn": "第三章本科二批分专业录取",
+      "pdf_pages": [457, 458, 869],
+      "expected_final_sheet": "07_本科二批分专业录取",
+      "table_family": "major_admission"
+    },
+    {
+      "section_id": "chapter3_vocational_admission",
+      "section_name_cn": "第三章高职高专录取",
+      "pdf_pages": [870, 871, 912],
+      "expected_final_sheet": "08_高职高专录取",
+      "table_family": "college_admission"
+    }
+  ]
+}
