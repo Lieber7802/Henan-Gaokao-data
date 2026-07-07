@@ -415,12 +415,22 @@ def source_page_from_name(path: Path) -> int:
     return int(match.group(1))
 
 
-def load_long_rows(raw_dir: Path, target_sections: dict[str, str]) -> list[dict[str, Any]]:
+def load_long_rows(
+    raw_dir: Path,
+    target_sections: dict[str, str],
+    *,
+    page_from: int | None = None,
+    page_to: int | None = None,
+) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for section_id, batch in target_sections.items():
         state: dict[str, Any] = {}
         for json_path in sorted((raw_dir / section_id / "json").glob("page_*_res.json")):
             page = source_page_from_name(json_path)
+            if page_from is not None and page < page_from:
+                continue
+            if page_to is not None and page > page_to:
+                continue
             tokens = table_tokens_from_json(json_path)
             rows.extend(parse_major_tokens(tokens, batch, page, state=state))
     return rows
@@ -513,6 +523,8 @@ def parse_args() -> argparse.Namespace:
         default=list(TARGET_SECTIONS),
         help="Section ids to include. Defaults to the two pilot major-admission sections.",
     )
+    parser.add_argument("--page-from", type=int, default=None, help="Optional inclusive PDF page lower bound.")
+    parser.add_argument("--page-to", type=int, default=None, help="Optional inclusive PDF page upper bound.")
     return parser.parse_args()
 
 
@@ -520,7 +532,7 @@ def main() -> None:
     args = parse_args()
     target_sections = {section_id: TARGET_SECTIONS.get(section_id, "本科一批") for section_id in args.sections}
     args.output_json.parent.mkdir(parents=True, exist_ok=True)
-    long_rows = load_long_rows(args.raw_dir, target_sections)
+    long_rows = load_long_rows(args.raw_dir, target_sections, page_from=args.page_from, page_to=args.page_to)
     wide_rows, review_rows = pivot_rows(long_rows)
     payload = {
         "columns": [
@@ -543,6 +555,8 @@ def main() -> None:
             "wide_row_count": len(wide_rows),
             "review_row_count": len(review_rows),
             "source_sections": list(target_sections),
+            "page_from": args.page_from,
+            "page_to": args.page_to,
         },
     }
     args.output_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

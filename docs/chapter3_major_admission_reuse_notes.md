@@ -29,7 +29,7 @@
 - 最终 Excel：`output/ppstructure_full/chapter3_batch2/preview/本科二批分数线.xlsx`
 - 进度状态：`output/ppstructure_full/chapter3_batch2/review/pipeline_status.json`
 
-脚本默认页码是 `457-869`。如果后续根据目录确认边界不同，只改 `scripts/run_chapter3_batch2_full_pipeline.py` 里的 `--page-from` 和 `--page-to`。
+脚本默认页码是 `449-869`。本科一批到 PDF 446 页结束，PDF 447-448 为过渡页/无有效表格，PDF 449 页开始是本科二批。如果后续根据目录确认边界不同，只改 `scripts/run_chapter3_batch2_full_pipeline.py` 里的 `--page-from` 和 `--page-to`。
 
 ## 必须复用的经验
 

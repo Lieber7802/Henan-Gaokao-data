@@ -53,7 +53,7 @@ def main() -> None:
             "--page-from",
             "123",
             "--page-to",
-            "456",
+            "446",
             "--section-id",
             "chapter3_batch1_major_admission",
             "--section-name-cn",
@@ -81,6 +81,10 @@ def main() -> None:
             str(DATA_JSON),
             "--sections",
             "chapter3_batch1_major_admission",
+            "--page-from",
+            "123",
+            "--page-to",
+            "446",
         ],
     )
 

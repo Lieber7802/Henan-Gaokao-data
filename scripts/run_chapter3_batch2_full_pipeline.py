@@ -51,7 +51,7 @@ def main() -> None:
             str(PYTHON),
             "scripts/run_ppstructure_pilot.py",
             "--page-from",
-            "457",
+            "449",
             "--page-to",
             "869",
             "--section-id",
@@ -81,6 +81,10 @@ def main() -> None:
             str(DATA_JSON),
             "--sections",
             "chapter3_batch2_major_admission",
+            "--page-from",
+            "449",
+            "--page-to",
+            "869",
         ],
     )
 
